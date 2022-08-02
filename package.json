@@ -1,0 +1,56 @@
+{
+  "name": "component-library-neumorpho",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "alias": {
+    "react-native": "react-native-web"
+  },
+  "scripts": {
+    "build": "parcel build",
+    "compile": "rm -rf dist && tsc -p . && cp -rf './src/Assets' dist/src",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@parcel/transformer-typescript-types": "^2.6.2",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-native": "^0.69.3",
+    "babel-loader": "^8.2.5",
+    "parcel": "^2.6.2",
+    "tailwindcss": "^3.1.6",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@storybook/addon-react-native-web": "^0.0.18",
+    "nativewind": "^2.0.0-next.52",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native-neumorphism": "^0.1.5",
+    "react-native-web": "^0.18.7",
+    "tailwindcss-neumorphism": "^0.1.0",
+    "ui-neumorphism": "^1.1.3"
+  },
+  "resolutions": {
+    "**/@types/react": "16.9.43",
+    "@types/react": "18.0.0",
+    "@types/react-native": "0.69.2"
+  }
+}
